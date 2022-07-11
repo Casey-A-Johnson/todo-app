@@ -16,7 +16,9 @@ const Task = (props) => {
     >
       <p
         style={
-          done ? { textDecoration: "line-through" } : { textDecoration: "none" }
+          done
+            ? { textDecoration: "line-through", color: "red" }
+            : { textDecoration: "none" }
         }
       >
         {todo}
