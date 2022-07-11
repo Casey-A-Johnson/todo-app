@@ -7,7 +7,11 @@ const Task = (props) => {
 
   return (
     <div
-      style={{ display: "flex", justifyContent: "center" }}
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
       className="todoItem"
     >
       <p
@@ -22,7 +26,9 @@ const Task = (props) => {
         onChange={(e) => setDone(e.target.checked)}
         checked={done}
       />
-      <button onClick={handleDelete}>Delete</button>
+      <button style={{ height: "20px" }} onClick={handleDelete}>
+        Delete
+      </button>
     </div>
   );
 };
